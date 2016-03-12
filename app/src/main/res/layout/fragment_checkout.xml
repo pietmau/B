@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basket_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Checkout"
+    android:paddingBottom="@dimen/quarter_standard_margin"
+    android:paddingLeft="@dimen/quarter_standard_margin"
+    android:paddingRight="@dimen/quarter_standard_margin"
+    android:paddingTop="@dimen/quarter_standard_margin"
+    tools:context="view.basket.BasketView">
+
+    <view.customviews.checkout.CheckoutRecyclerView
+        android:id="@+id/checkout_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/total_view"
+        android:scrollbars="vertical" />
+
+    <view.customviews.checkout.TotalView
+        android:layout_above="@+id/rates"
+        android:id="@+id/total_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </view.customviews.checkout.TotalView>
+
+    <LinearLayout
+        android:id="@+id/rates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/change"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_curr"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+        <FrameLayout
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:layout_gravity="center"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="@dimen/button_size_normal"
+                android:layout_height="@dimen/button_size_normal" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/getting_rate" />
+        </FrameLayout>
+
+        <view.customviews.checkout.CheckoutSpinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+        </view.customviews.checkout.CheckoutSpinner>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size_normal"
+        android:layout_above="@+id/checkout"
+        android:text="@string/modify" />
+
+    <Button
+        android:id="@+id/checkout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size_normal"
+        android:layout_alignParentBottom="true"
+        android:text="@string/checkout" />
+
+</RelativeLayout>

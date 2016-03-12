@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">M. Pietrantuono</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="peas_text">Peas: 95p per bag</string>
+    <string name="eggs_text">Eggs: £2.10 per dozen</string>
+    <string name="milk_text">Milk: £1.30 per bottle</string>
+    <string name="beans_text">Beans: 75p per can</string>
+    <string name="basket_text">Your basket:</string>
+    <string name="quantity_text">QUANTITY:</string>
+    <string name="gbp">GBP</string>
+    <string name="eur">EUR</string>
+    <string name="checkout">CHECKOUT</string>
+    <string name="modify">MODIFY</string>
+    <string name="change_curr">Currency</string>
+    <string name="currency">CURRENCY</string>
+    <string name="total">TOTAL:</string>
+    <string name="thanks">Thanks for your purchase</string>
+    <string name="x">X</string>
+    <string name="line">-</string>
+    <string name="getting_rate">Getting rates…</string>
+    <string name="equal">=</string>
+    <string name="plus">+</string>
+    <string name="a">a&#160;</string>
+    <string name="no_rates">Sorry unable to download rates</string>
+</resources>

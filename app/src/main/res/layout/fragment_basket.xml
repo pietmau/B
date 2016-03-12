@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basket_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Basket"
+    android:paddingBottom="@dimen/quarter_standard_margin"
+    android:paddingLeft="@dimen/quarter_standard_margin"
+    android:paddingRight="@dimen/quarter_standard_margin"
+    android:paddingTop="@dimen/quarter_standard_margin"
+    tools:context="view.basket.BasketView">
+
+    <view.customviews.basket.BasketRecyclerView
+        android:id="@+id/basket_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/basket_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:fabSize="normal" />
+
+</RelativeLayout>
