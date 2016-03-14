@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 public class CurrencyConverterTest {
 
     @Test
-    public void itemInGbp() throws Exception {
+    public void itemInGbp()  {
         BigDecimal price = new BigDecimal("0.1234");
         ShoppingItem shoppingItem= new ShoppingItem("foo",price,"unity");
         shoppingItem.increase();
